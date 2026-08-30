@@ -675,8 +675,11 @@ section .title::after{
 .contact .title::after{
     content: "get in touch";
 }
+/* contact section styling */
 .contact .contact-content .column{
-    width: calc(50% - 30px);
+    width: 100%;
+    max-width: 600px; /* Voorkomt dat je invulvelden te lang en uitgerekt worden */
+    margin: 0 auto;
 }
 .contact .contact-content .text{
     font-size: 20px;
