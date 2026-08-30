@@ -205,6 +205,12 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
+.section-divider {
+    height: 3px;
+    width: 100%;
+    background: blue; 
+    opacity: 0.4; 
+}
 
 /* button styling */
 .btn{
