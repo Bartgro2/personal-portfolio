@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,15 @@
     <script src="https://kit.fontawesome.com/cdf1aa91ca.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
-
 </head>
+
 <body>
     <nav class="navbar">
         <div class="max-width">
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Teams</a></li>
+                <li><a href="#ervaring" class="menu-btn">Ervaring</a></li>
+                <li><a href="#projecten" class="menu-btn">Projecten</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -31,193 +30,219 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, my name is </div>   
-                <div class="text-2">Bart Groothuysen</div>
-                <div class="text-3">And i'm a <span class="typing">Developer</span></div>
-                <a href="#">Hire me</a>
+                <div class="home-text-box">
+                    <div class="text-1">Hello, my name is </div>
+                    <div class="text-2">Bart Groothuysen</div>
+                    <div class="text-3">And i'm a <span class="typing">Developer</span></div>
+
+                    <p class="home-bio">
+                        Ik ben een Software Developer met een passie voor development. De uitdaging die bij het
+                        vakgebied hoort, zorgt dat ik mezelf constant kan verbeteren. Tijdens mijn opleiding Software
+                        Developer aan het Nova College ben ik actief bezig geweest met het ontwikkelen van mijn
+                        vaardigheden door te werken aan projecten met onder andere: Laravel, Node.js en .NET.
+                    </p>
+
+                    <div class="btn-group" style="margin-top: 20px; display: flex; gap: 15px;">
+                        <a href="#projecten" class="btn">Bekijk Projecten</a>
+                        <a href="#contact" class="btn contact-btn">Contact Mij</a>
+                    </div>
+
+                    <div class="home-socials" style="margin-top: 25px;">
+                        <a href="https://github.com/Bartgro2" target="_blank" aria-label="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/bart-groothuysen-724592194/" target="_blank"
+                            aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="home-image-box">
+                    <img src="images/profile.jpg" alt="profile picture">
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- about section start-->
-     <section class="about" id="about">
+
+    </section>
+    <div class="section-divider"></div>
+
+    <section class="journey-section" id="ervaring">
         <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="Images/profile.jpg" alt="">
+            <h2 class="title">Ervaring</h2>
+            <div class="timeline">
+
+                <div class="timeline-item education">
+                    <div class="timeline-date">aug 2021 - sep. 2025</div>
+                    <div class="timeline-content">
+                        <h3>Software Developer MBO 4</h3>
+                        <h4>Nova College</h4>
+                        <p>Tijdens mijn opleiding heb ik geleerd om software en applicaties te ontwikkelen met onder
+                            andere HTML, CSS, PHP, SQL, JavaScript en C#. Als keuzedelen heb ik Software 1 t/m 3
+                            gevolgd, waarbij ik projecten heb gemaakt zoals een Unity-game, een Node.js Discord-bot en
+                            een JavaScript-to-do-app. Daarnaast heb ik veel ervaring opgedaan met samenwerken aan
+                            verschillende projecten.</p>
+                    </div>
                 </div>
-                <div class="column right">
-                    <div class="text">I'm Bart Groothuysen and I'm a <span class="typing-2">Developer</span></div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio nostrum architecto vel cum, quia ducimus optio accusamus consequuntur tenetur ea nulla molestias repellat blanditiis iure in? Atque, voluptatum. Quaerat, explicabo?</p>
-                    <a href="#">Download CV</a>
+
+                <div class="timeline-item experience">
+                    <div class="timeline-date">september 2023 - januari 2024</div>
+                    <div class="timeline-content">
+                        <h3>Software Developer</h3>
+                        <h4>PIPELINE SOFTWARE</h4>
+                        <p>Gefocust op front-end development en performance-optimalisatie voor reisbureau-websites.
+                            Realiseerde interactieve webpagina's, verminderde externe afhankelijkheden en implementeerde
+                            geavanceerde CSS- en JavaScript-animaties (waaronder Typed.js).</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item experience">
+                    <div class="timeline-date">maart 2025 - juli 2025</div>
+                    <div class="timeline-content">
+                        <h3>Fullstack Developer</h3>
+                        <h4>ONETEAM Security</h4>
+                        <p> Ontwikkelde zowel frontend- als backendfunctionaliteiten voor een complete quizapplicatie
+                            binnen een driekoppig Scrum-team. Bouwde herbruikbare Blazor-componenten, koppelde externe
+                            API's en implementeerde databasefunctionaliteiten binnen een Clean Architecture structuur.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- service section start-->
-     <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">My Services</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Web Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere doloribus quia laboriosam excepturi maxime aliquam.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">Advertising</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere doloribus quia laboriosam excepturi maxime aliquam.</p>
-                    </div>     
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Web Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere doloribus quia laboriosam excepturi maxime aliquam.</p>
-                    </div>
-                </div>         
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills section  start-->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My creative skills and experiences.</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla esse doloribus quaerat dolor maiores possimus officiis id repellendus at labore corrupti optio eaque nam dolore itaque voluptatibus, accusantium repellat provident?</p>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>90%</span>     
-                        </div>
-                        <div class="line html"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>90%</span>   
-                        </div> 
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>90%</span>        
-                        </div>
-                        <div class="line js"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>PHP</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line php"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MySQL</span>
-                            <span>90%</span>     
-                        </div>
-                        <div class="line mysql"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="section-divider"></div>
 
     <!-- team sections start-->
-    <section class="teams" id="teams">
+    <section class="projects" id="projecten">
         <div class="max-width">
-            <h2 class="title">My teams</h2>
-            <div class="teams-content">
-                <div class="card">
-                    <div class="box">
-                       <img src="Images/avatar.png" alt="Team Member 1">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+            <h2 class="title">Projecten</h2>
+            <div class="projects-grid">
+                <div class="projects-card">
+                    <div class="projects-card-info">
+                        <div class="card-glow"></div>
+                        <div class="projects-card-img">
+                            <img src="https://placehold.net/default.svg" alt="Profile pic">
+                        </div>
+                        <div class="projects-info">
+                            <h2>Laravel-Webshop</h2>
+                            <div class="projects-info-div">
+                                <div class="projects-info-btn">
+                                    <span>Laravel</span>
+                                    <span>SQLite</span>
+                                </div>
+                                <a href="https://github.com/Bartgro2/Laraval-Webshop" target="_blank">
+                                    <button class="btn">
+                                        <span class="btn-text">In Ontwikkeling</span>
+                                        <i class="ri-arrow-right-long-line arrow1"></i>
+                                        <i class="ri-arrow-right-long-line arrow2"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="Images/avatar.png" alt="Team Member 2">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                <div class="projects-card">
+                    <div class="projects-card-info">
+                        <div class="card-glow"></div>
+                        <div class="projects-card-img">
+                            <img src="https://placehold.net/default.svg" alt="Webshop Screen">
+                        </div>
+                        <div class="projects-info">
+                            <h2>Project-Blok-4</h2>
+                            <div class="projects-info-div">
+                                <div class="projects-info-btn">
+                                    <span>PHP</span>
+                                    <span>Docker</span>
+                                </div>
+                                <a href="hhttps://github.com/Bartgro2/Project-Blok-4" target="_blank">
+                                    <button class="btn">
+                                        <span class="btn-text">Bekijk Code</span>
+                                        <i class="ri-arrow-right-long-line arrow1"></i>
+                                        <i class="ri-arrow-right-long-line arrow2"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="Images/avatar.png" alt="Team Member 3">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                <div class="projects-card">
+                    <div class="projects-card-info">
+                        <div class="card-glow"></div>
+                        <div class="projects-card-img">
+                            <img src="https://placehold.net/default.svg" alt="Project placeholder">
+                        </div>
+                        <div class="projects-info">
+                            <h2>Restaurant-NOVA</h2>
+                            <div class="projects-info-div">
+                                <div class="projects-info-btn">
+                                    <span>PHP</span>
+                                    <span>SQL</span>
+                                </div>
+                                <a href="https://github.com/Bartgro2/Restaurant-NOVA" target="_blank">
+                                    <button class="btn">
+                                        <span class="btn-text">Bekijk Code</span>
+                                        <i class="ri-arrow-right-long-line arrow1"></i>
+                                        <i class="ri-arrow-right-long-line arrow2"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <div class="projects-card-info">
+                        <div class="card-glow"></div>
+                        <div class="projects-card-img">
+                            <img src="https://placehold.net/default.svg" alt="Webshop Screen">
+                        </div>
+                        <div class="projects-info">
+                            <h2>Discord Bot</h2>
+                            <div class="projects-info-div">
+                                <div class="projects-info-btn">
+                                    <span>Node.js</span>
+                                    <span>Discord.api</span>
+                                </div>
+                                <a href="https://github.com/Bartgro2/Bot-Zone" target="_blank">
+                                    <button class="btn">
+                                        <span class="btn-text">Bekijk Code</span>
+                                        <i class="ri-arrow-right-long-line arrow1"></i>
+                                        <i class="ri-arrow-right-long-line arrow2"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="section-divider"></div>
 
     <!-- contact section start-->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact me</h2>
+            <h2 class="title">Contact mij</h2>
             <div class="contact-content">
-            <div class="column left">
-                <div class="text">Get in Touch</div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel consequuntur eligendi facere quibusdam delectus accusantium deleniti, ipsam aut est expedita!</p>
-                <div class="icons">
-                    <div class="row">
-                        <i class="fas fa-user"></i>
-                        <div class="info">
-                            <div class="head">Name</div>
-                            <div class="sub-title">Bart Groothuysen</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="info">
-                            <div class="head">Address</div>
-                            <div class="sub-title">country,capital</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <i class="fas fa-user"></i>
-                        <div class="info">
-                            <div class="head">Email</div>
-                            <div class="sub-title">abc@gmail.com</div>
-                        </div>
-                    </div>
-                </div>
-                </div>
                 <div class="column right">
-                    <div class="text">Message me</div>
                     <form action="#">
-                        <div class="field">
+                        <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Name" required>
                             </div>
-                            </div>
-                            <div class="field Email">
+                            <div class="field email">
                                 <input type="email" placeholder="Email" required>
                             </div>
-                            <div class="field">
-                                <input type="text" placeholder="Subject" required>
-                            </div>
-                            <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Describe Project.." required></textarea>
-                            </div>
-                            <div class="button">
-                                <button type="submit">Send message</button>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Onderwerp" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Je Bericht" required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Verzenden</button>
                         </div>
                     </form>
                 </div>
@@ -227,9 +252,11 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="#">Bart Groothuysen</a> | <span class="far fa-copyright"> </span>2026 All rights reserved.</span>
+        <span>Created By <a href="#">Bart Groothuysen</a> | <span class="far fa-copyright"> </span>2026 All rights
+            reserved.</span>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
