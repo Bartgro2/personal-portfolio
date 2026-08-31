@@ -156,12 +156,21 @@ html{
     flex-direction: column;
     align-items: flex-start; 
 }
+
+ .home .home-content .text-1,
+.home .home-content .text-2,
+.home .home-content .text-3,
+.home .home-content .home-bio {
+    width: 100%;
+    text-align: left;
+    display: block;
+} 
+
 .home .home-content .home-bio {
     font-size: 16px;
     color: var(--gray-light); 
     line-height: 1.6;
     margin: 15px 0;
-    text-align: left;
 }
 .home .home-content .home-image-box {
     width: 40%;
