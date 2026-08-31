@@ -443,7 +443,6 @@ section .title::after{
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: auto;
 }
 .projects-info-btn span{
     padding: 6px 18px;
@@ -471,6 +470,7 @@ section .title::after{
     content: "";
     display: none;
 }
+
 .contact .contact-content .column{
     width: 100%;
     max-width: 600px; 
