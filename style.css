@@ -608,23 +608,36 @@ footer span a:hover{
         padding: 120px 0 60px;
     }
      .home .home-content {
-        flex-direction: column;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center
+
     }
     .home .home-content .home-text-box,
     .home .home-content .home-image-box {
         width: 100%;
     }
     .home .home-content .home-text-box {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
     .home .home-content .home-image-box {
-        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-73%);
+        margin-top: 345px;
+        z-index: 10;
     }
     .home .home-content .home-image-box img {
         width: 250px;
         height: 250px;
         max-width: 100%;
+      
+    }
+    .home .home-content .home-bio{
+        margin-bottom: 290px;
     }
     .home .home-content .text-2{
         font-size: 60px;
