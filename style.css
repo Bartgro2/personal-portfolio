@@ -189,7 +189,7 @@ html{
 
 /* all similair content styling code */
 section{
-    padding: 100px 0;
+    padding: 35px 0;
 }
 .contact, footer{
     font-family: var(--Poppins);
@@ -199,8 +199,6 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
 section .title::before,
@@ -247,7 +245,6 @@ section .title::before,
 .journey-section {
     background: var(--body); 
     color: var(--white);
-    padding: 100px 0;
 }
 .journey-section .title::after,
 .contact .title::after {
@@ -339,7 +336,6 @@ section .title::before,
 .projects {
     background: var(--body); 
     color: var(--white);
-    padding: 100px 0;
 }
 .projects-grid {
     display: grid;
@@ -634,7 +630,7 @@ footer span a:hover{
         width: 250px;
         height: 250px;
         max-width: 100%;
-      
+
     }
     .home .home-content .home-bio{
         margin-bottom: 290px;
