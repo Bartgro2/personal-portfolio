@@ -200,16 +200,6 @@ section .title::before,
 .contact .title::before {
     display: none;
 }
-section .title::after{
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    font-size: 20px;
-    color: var(--crimson);
-    padding: 0 5px;
-    background: var(--white);
-    transform: translateX(-50%);
-}
 .section-divider {
     height: 3px;
     width: 100%;
@@ -462,20 +452,10 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
-.contact .title::after{
-    content: "";
-    display: none;
-}
-
 .contact .contact-content .column{
     width: 100%;
     max-width: 600px; 
     margin: 0 auto;
-}
-.contact .contact-content .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
 }
 .contact .right form .fields{
     display: flex;
