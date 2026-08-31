@@ -59,10 +59,6 @@ html{
     padding: 30px 0;
     background: var(--crimson);
 }
-.navbar.sticky{
-    padding: 30px 0;
-    background: var(--crimson);
-}
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -203,16 +199,6 @@ section .title::before,
 .projects .title::before,
 .contact .title::before {
     display: none;
-}
-section .title::after{
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    font-size: 20px;
-    color: var(--crimson);
-    padding: 0 5px;
-    background: var(--white);
-    transform: translateX(-50%);
 }
 .section-divider {
     height: 3px;
@@ -443,7 +429,6 @@ section .title::after{
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: auto;
 }
 .projects-info-btn span{
     padding: 6px 18px;
@@ -467,20 +452,10 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
-.contact .title::after{
-    content: "";
-    display: none;
-}
-/* contact section styling */
 .contact .contact-content .column{
     width: 100%;
     max-width: 600px; 
     margin: 0 auto;
-}
-.contact .contact-content .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
 }
 .contact .right form .fields{
     display: flex;
