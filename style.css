@@ -156,12 +156,21 @@ html{
     flex-direction: column;
     align-items: flex-start; 
 }
+
+ .home .home-content .text-1,
+.home .home-content .text-2,
+.home .home-content .text-3,
+.home .home-content .home-bio {
+    width: 100%;
+    text-align: left;
+    display: block;
+} 
+
 .home .home-content .home-bio {
     font-size: 16px;
     color: var(--gray-light); 
     line-height: 1.6;
     margin: 15px 0;
-    text-align: left;
 }
 .home .home-content .home-image-box {
     width: 40%;
@@ -180,7 +189,7 @@ html{
 
 /* all similair content styling code */
 section{
-    padding: 100px 0;
+    padding: 35px 0;
 }
 .contact, footer{
     font-family: var(--Poppins);
@@ -190,8 +199,6 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
 section .title::before,
@@ -238,7 +245,6 @@ section .title::before,
 .journey-section {
     background: var(--body); 
     color: var(--white);
-    padding: 100px 0;
 }
 .journey-section .title::after,
 .contact .title::after {
@@ -330,7 +336,6 @@ section .title::before,
 .projects {
     background: var(--body); 
     color: var(--white);
-    padding: 100px 0;
 }
 .projects-grid {
     display: grid;
@@ -599,23 +604,36 @@ footer span a:hover{
         padding: 120px 0 60px;
     }
      .home .home-content {
-        flex-direction: column;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center
+
     }
     .home .home-content .home-text-box,
     .home .home-content .home-image-box {
         width: 100%;
     }
     .home .home-content .home-text-box {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
     .home .home-content .home-image-box {
-        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-73%);
+        margin-top: 345px;
+        z-index: 10;
     }
     .home .home-content .home-image-box img {
         width: 250px;
         height: 250px;
         max-width: 100%;
+
+    }
+    .home .home-content .home-bio{
+        margin-bottom: 290px;
     }
     .home .home-content .text-2{
         font-size: 60px;
@@ -659,9 +677,16 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
+    .home .home-content .home-image-box {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-70%);
+        margin-top: 385px;
+    }
     .home{
         background-attachment: scroll;
     }
+
     .projects-info-div {
         flex-direction: column;
         align-items: flex-start;
