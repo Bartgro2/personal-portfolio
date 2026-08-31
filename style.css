@@ -672,6 +672,10 @@ footer span a:hover{
         justify-content: center;
         gap: 30px;
     }
+    .projects-card {
+        width: 100%;
+        min-width: 0;
+    }
 }
 @media (max-width: 500px) {
     .home .home-content .text-2{
@@ -682,5 +686,20 @@ footer span a:hover{
     }
     .home{
         background-attachment: scroll;
+    }
+    .projects-info-div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .projects-info-btn {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .projects-info-div .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
     }
 }
